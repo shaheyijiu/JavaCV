@@ -4,7 +4,7 @@ JavaCV是对各种常用计算机视觉库的封装后的一组jar包，其中�
 等计算机视觉编程人员常用库的接口，可以通过其中的utility类方便的在包括Android在内的Java平台上调用这些接口。
 #Dependencies
 * [JavaCV for Windows](http://www.softpedia.com/get/Programming/Other-Programming-Files/JavaCV.shtml)
-* [OpenCV for windowS](https://github.com/shaheyijiu/JavaCV/tree/master/release)  
+* [OpenCV for windowS](http://www.softpedia.com/get/Programming/Other-Programming-Files/JavaCV.shtml)  
 
 #Starting the code
 直接下载代码并在Eclipse导入项目，或者通过在Eclipse中clone项目。项目需要依赖Javacpp、Javacv、
