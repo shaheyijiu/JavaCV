@@ -1,0 +1,616 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6057949e, pid=35144, tid=40344
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_91-b14) (build 1.8.0_91-b14)
+# Java VM: Java HotSpot(TM) Client VM (25.91-b14 mixed mode, sharing windows-x86 )
+# Problematic frame:
+# V  [jvm.dll+0xd949e]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00d4d000):  JavaThread "main" [_thread_in_vm, id=40344, stack(0x00c80000,0x00cd0000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000000
+
+Registers:
+EAX=0x00000000, EBX=0x00000000, ECX=0x00d4d000, EDX=0x00000182
+ESP=0x00c87ca0, EBP=0x00c87cd0, ESI=0x05bfff24, EDI=0x00d4d000
+EIP=0x6057949e, EFLAGS=0x00010246
+
+Top of Stack: (sp=0x00c87ca0)
+0x00c87ca0:   05bfff20 05bfff24 00000000 00c87cbc
+0x00c87cb0:   604a6d84 00d4d000 00d4d000 00c87cd4
+0x00c87cc0:   00d4d000 05a4c82c 00000182 607933b8
+0x00c87cd0:   00c88560 714c3b7d 00d4d000 00000000
+0x00c87ce0:   00000000 1e5046d0 05ac90e0 00d4d140
+0x00c87cf0:   00000000 00d4d140 00000000 00000000
+0x00c87d00:   00000000 00000000 00000000 00000000
+0x00c87d10:   00000000 00000000 00000000 00000000 
+
+Instructions: (pc=0x6057949e)
+0x6057947e:   e8 3d d9 f2 ff 33 db 83 c4 08 89 7d f0 89 5d f4
+0x6057948e:   39 5f 04 74 08 8d 4d f0 e8 35 cf 0c 00 8b 45 0c
+0x6057949e:   8b 30 8b 0d e0 52 81 60 39 1c 31 74 45 56 e8 5f
+0x605794ae:   ac f6 ff 83 c4 04 6a 00 6a 00 8d 4d dc 8d 78 01 
+
+
+Register to memory mapping:
+
+EAX=0x00000000 is an unknown value
+EBX=0x00000000 is an unknown value
+ECX=0x00d4d000 is a thread
+EDX=0x00000182 is an unknown value
+ESP=0x00c87ca0 is pointing into the stack for thread: 0x00d4d000
+EBP=0x00c87cd0 is pointing into the stack for thread: 0x00d4d000
+ESI=0x05bfff24 is an unknown value
+EDI=0x00d4d000 is a thread
+
+
+Stack: [0x00c80000,0x00cd0000],  sp=0x00c87ca0,  free space=31k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0xd949e]
+C  [jniopencv_highgui.dll+0x3b7d]
+C  [jniopencv_highgui.dll+0x38fe]
+C  [jniopencv_highgui.dll+0x3de0]
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x1594e5]
+V  [jvm.dll+0x21f0ae]
+V  [jvm.dll+0x15957e]
+V  [jvm.dll+0xdb72b]
+V  [jvm.dll+0xde80c]
+C  [jniopencv_highgui.dll+0x3ae3]
+C  [jniopencv_highgui.dll+0x38fe]
+C  [jniopencv_highgui.dll+0x3de0]
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x1594e5]
+V  [jvm.dll+0x21f0ae]
+V  [jvm.dll+0x15957e]
+V  [jvm.dll+0xdb72b]
+V  [jvm.dll+0xde80c]
+C  [jniopencv_highgui.dll+0x3ae3]
+C  [jniopencv_highgui.dll+0x38fe]
+C  [jniopencv_highgui.dll+0x3de0]
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x1594e5]
+V  [jvm.dll+0x21f0ae]
+V  [jvm.dll+0x15957e]
+V  [jvm.dll+0xdb72b]
+V  [jvm.dll+0xde80c]
+C  [jniopencv_highgui.dll+0x3ae3]
+C  [jniopencv_highgui.dll+0x38fe]
+C  [jniopencv_highgui.dll+0x3de0]
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x1594e5]
+V  [jvm.dll+0x21f0ae]
+V  [jvm.dll+0x15957e]
+V  [jvm.dll+0xdb72b]
+V  [jvm.dll+0xde80c]
+C  [jniopencv_highgui.dll+0x3ae3]
+C  [jniopencv_highgui.dll+0x38fe]
+C  [jniopencv_highgui.dll+0x3de0]
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x1594e5]
+V  [jvm.dll+0x21f0ae]
+V  [jvm.dll+0x15957e]
+V  [jvm.dll+0xdb72b]
+V  [jvm.dll+0xde80c]
+C  [jniopencv_highgui.dll+0x3ae3]
+C  [jniopencv_highgui.dll+0x38fe]
+C  [jniopencv_highgui.dll+0x3de0]
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x1594e5]
+V  [jvm.dll+0x21f0ae]
+V  [jvm.dll+0x15957e]
+V  [jvm.dll+0xdb72b]
+V  [jvm.dll+0xde80c]
+C  [jniopencv_highgui.dll+0x3ae3]
+C  [jniopencv_highgui.dll+0x38fe]
+C  [jniopencv_highgui.dll+0x3de0]
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x1594e5]
+V  [jvm.dll+0x21f0ae]
+V  [jvm.dll+0x15957e]
+V  [jvm.dll+0xdb72b]
+V  [jvm.dll+0xde80c]
+C  [jniopencv_highgui.dll+0x3ae3]
+C  [jniopencv_highgui.dll+0x38fe]
+C  [jniopencv_highgui.dll+0x3de0]
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x1594e5]
+V  [jvm.dll+0x21f0ae]
+V  [jvm.dll+0x15957e]
+V  [jvm.dll+0xdb72b]
+V  [jvm.dll+0xde80c]
+C  [jniopencv_highgui.dll+0x3ae3]
+C  [jniopencv_highgui.dll+0x38fe]
+C  [jniopencv_highgui.dll+0x3de0]
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x1594e5]
+V  [jvm.dll+0x21f0ae]
+V  [jvm.dll+0x15957e]
+V  [jvm.dll+0xdb72b]
+V  [jvm.dll+0xde80c]
+C  [jniopencv_highgui.dll+0x3ae3]
+C  [jniopencv_highgui.dll+0x38fe]
+C  [jniopencv_highgui.dll+0x3de0]
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x1594e5]
+V  [jvm.dll+0x21f0ae]
+V  [jvm.dll+0x15957e]
+V  [jvm.dll+0xdb72b]
+...<more frames>...
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui$CvMouseCallback.call(IIIILcom/googlecode/javacpp/Pointer;)V+0
+v  ~StubRoutines::call_stub
+j  com.googlecode.javacv.cpp.opencv_highgui.cvWaitKey(I)I+0
+j  com.kdk.trace.JavaCVCamShift.<init>()V+782
+j  com.kdk.trace.JavaCVCamShift.main([Ljava/lang/String;)V+3
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00e18000 JavaThread "Service Thread" daemon [_thread_blocked, id=21472, stack(0x047a0000,0x047f0000)]
+  0x00e10800 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=15988, stack(0x00ff0000,0x01040000)]
+  0x00e0f800 JavaThread "Attach Listener" daemon [_thread_blocked, id=18940, stack(0x04820000,0x04870000)]
+  0x00e0c800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=10088, stack(0x04670000,0x046c0000)]
+  0x00df1400 JavaThread "Finalizer" daemon [_thread_blocked, id=20840, stack(0x045c0000,0x04610000)]
+  0x00d95800 JavaThread "Reference Handler" daemon [_thread_blocked, id=42496, stack(0x00f30000,0x00f80000)]
+=>0x00d4d000 JavaThread "main" [_thread_in_vm, id=40344, stack(0x00c80000,0x00cd0000)]
+
+Other Threads:
+  0x00d91400 VMThread [stack: 0x01040000,0x01090000] [id=8364]
+  0x00e4a800 WatcherThread [stack: 0x05450000,0x054a0000] [id=47024]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ def new generation   total 4928K, used 2626K [0x0f200000, 0x0f750000, 0x14750000)
+  eden space 4416K,  57% used [0x0f200000, 0x0f477638, 0x0f650000)
+  from space 512K,  19% used [0x0f6d0000, 0x0f6e9258, 0x0f750000)
+  to   space 512K,   0% used [0x0f650000, 0x0f650000, 0x0f6d0000)
+ tenured generation   total 10944K, used 9845K [0x14750000, 0x15200000, 0x1f200000)
+   the space 10944K,  89% used [0x14750000, 0x150ed7d0, 0x150ed800, 0x15200000)
+ Metaspace       used 787K, capacity 2824K, committed 2880K, reserved 4480K
+
+Card table byte_map: [0x00e50000,0x00ee0000] byte_map_base: 0x00dd7000
+
+Polling page: 0x00180000
+
+CodeCache: size=32768Kb used=828Kb max_used=828Kb free=31939Kb
+ bounds [0x02520000, 0x025f0000, 0x04520000]
+ total_blobs=272 nmethods=90 adapters=113
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.610 Thread 0x00e10800   86             sun.nio.cs.ext.DoubleByte$Encoder::encodeChar (21 bytes)
+Event: 0.610 Thread 0x00e10800 nmethod 86 0x025ee108 code [0x025ee200, 0x025ee2d0]
+Event: 1.839 Thread 0x00e10800   87             java.lang.ref.Reference::get (5 bytes)
+Event: 1.839 Thread 0x00e10800 nmethod 87 0x025ee3c8 code [0x025ee4c0, 0x025ee540]
+Event: 1.858 Thread 0x00e10800   88             java.util.BitSet::wordIndex (5 bytes)
+Event: 1.858 Thread 0x00e10800 nmethod 88 0x025ee588 code [0x025ee680, 0x025ee6f0]
+Event: 1.858 Thread 0x00e10800   89             java.util.BitSet::checkInvariants (111 bytes)
+Event: 1.858 Thread 0x00e10800 nmethod 89 0x025ee748 code [0x025ee840, 0x025ee8c0]
+Event: 1.860 Thread 0x00e10800   90             java.lang.String::lastIndexOf (13 bytes)
+Event: 1.861 Thread 0x00e10800 nmethod 90 0x025ee908 code [0x025eea10, 0x025eeaac]
+
+GC Heap History (6 events):
+Event: 0.271 GC heap before
+{Heap before GC invocations=0 (full 0):
+ def new generation   total 4928K, used 3488K [0x0f200000, 0x0f750000, 0x14750000)
+  eden space 4416K,  78% used [0x0f200000, 0x0f568140, 0x0f650000)
+  from space 512K,   0% used [0x0f650000, 0x0f650000, 0x0f6d0000)
+  to   space 512K,   0% used [0x0f6d0000, 0x0f6d0000, 0x0f750000)
+ tenured generation   total 10944K, used 0K [0x14750000, 0x15200000, 0x1f200000)
+   the space 10944K,   0% used [0x14750000, 0x14750000, 0x14750200, 0x15200000)
+ Metaspace       used 440K, capacity 2504K, committed 2624K, reserved 4480K
+Event: 0.274 GC heap after
+Heap after GC invocations=1 (full 0):
+ def new generation   total 4928K, used 512K [0x0f200000, 0x0f750000, 0x14750000)
+  eden space 4416K,   0% used [0x0f200000, 0x0f200000, 0x0f650000)
+  from space 512K, 100% used [0x0f6d0000, 0x0f750000, 0x0f750000)
+  to   space 512K,   0% used [0x0f650000, 0x0f650000, 0x0f6d0000)
+ tenured generation   total 10944K, used 314K [0x14750000, 0x15200000, 0x1f200000)
+   the space 10944K,   2% used [0x14750000, 0x1479ea80, 0x1479ec00, 0x15200000)
+ Metaspace       used 440K, capacity 2504K, committed 2624K, reserved 4480K
+}
+Event: 0.379 GC heap before
+{Heap before GC invocations=1 (full 0):
+ def new generation   total 4928K, used 4772K [0x0f200000, 0x0f750000, 0x14750000)
+  eden space 4416K,  96% used [0x0f200000, 0x0f629330, 0x0f650000)
+  from space 512K, 100% used [0x0f6d0000, 0x0f750000, 0x0f750000)
+  to   space 512K,   0% used [0x0f650000, 0x0f650000, 0x0f6d0000)
+ tenured generation   total 10944K, used 314K [0x14750000, 0x15200000, 0x1f200000)
+   the space 10944K,   2% used [0x14750000, 0x1479ea80, 0x1479ec00, 0x15200000)
+ Metaspace       used 696K, capacity 2760K, committed 2880K, reserved 4480K
+Event: 0.382 GC heap after
+Heap after GC invocations=2 (full 0):
+ def new generation   total 4928K, used 345K [0x0f200000, 0x0f750000, 0x14750000)
+  eden space 4416K,   0% used [0x0f200000, 0x0f200000, 0x0f650000)
+  from space 512K,  67% used [0x0f650000, 0x0f6a65a0, 0x0f6d0000)
+  to   space 512K,   0% used [0x0f6d0000, 0x0f6d0000, 0x0f750000)
+ tenured generation   total 10944K, used 820K [0x14750000, 0x15200000, 0x1f200000)
+   the space 10944K,   7% used [0x14750000, 0x1481d140, 0x1481d200, 0x15200000)
+ Metaspace       used 696K, capacity 2760K, committed 2880K, reserved 4480K
+}
+Event: 0.611 GC heap before
+{Heap before GC invocations=2 (full 0):
+ def new generation   total 4928K, used 2914K [0x0f200000, 0x0f750000, 0x14750000)
+  eden space 4416K,  58% used [0x0f200000, 0x0f482638, 0x0f650000)
+  from space 512K,  67% used [0x0f650000, 0x0f6a65a0, 0x0f6d0000)
+  to   space 512K,   0% used [0x0f6d0000, 0x0f6d0000, 0x0f750000)
+ tenured generation   total 10944K, used 9768K [0x14750000, 0x15200000, 0x1f200000)
+   the space 10944K,  89% used [0x14750000, 0x150da230, 0x150da400, 0x15200000)
+ Metaspace       used 750K, capacity 2792K, committed 2880K, reserved 4480K
+Event: 0.612 GC heap after
+Heap after GC invocations=3 (full 0):
+ def new generation   total 4928K, used 100K [0x0f200000, 0x0f750000, 0x14750000)
+  eden space 4416K,   0% used [0x0f200000, 0x0f200000, 0x0f650000)
+  from space 512K,  19% used [0x0f6d0000, 0x0f6e9258, 0x0f750000)
+  to   space 512K,   0% used [0x0f650000, 0x0f650000, 0x0f6d0000)
+ tenured generation   total 10944K, used 9845K [0x14750000, 0x15200000, 0x1f200000)
+   the space 10944K,  89% used [0x14750000, 0x150ed7d0, 0x150ed800, 0x15200000)
+ Metaspace       used 750K, capacity 2792K, committed 2880K, reserved 4480K
+}
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.239 Thread 0x00d4d000 Exception <a 'java/security/PrivilegedActionException'> (0x0f42eb20) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u91\6644\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.239 Thread 0x00d4d000 Exception <a 'java/security/PrivilegedActionException'> (0x0f42ed20) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u91\6644\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.239 Thread 0x00d4d000 Exception <a 'java/security/PrivilegedActionException'> (0x0f42fbc0) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u91\6644\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.239 Thread 0x00d4d000 Exception <a 'java/security/PrivilegedActionException'> (0x0f42fdc0) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u91\6644\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.239 Thread 0x00d4d000 Exception <a 'java/security/PrivilegedActionException'> (0x0f430da0) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u91\6644\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.239 Thread 0x00d4d000 Exception <a 'java/security/PrivilegedActionException'> (0x0f430fa0) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u91\6644\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.239 Thread 0x00d4d000 Exception <a 'java/security/PrivilegedActionException'> (0x0f431d18) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u91\6644\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.239 Thread 0x00d4d000 Exception <a 'java/security/PrivilegedActionException'> (0x0f431f18) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u91\6644\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 5.177 Thread 0x00d4d000 Exception <a 'java/lang/StackOverflowError'> (0x0f4659c8) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u91\6644\hotspot\src\share\vm\runtime\javaCalls.cpp, line 386]
+Event: 5.177 Thread 0x00d4d000 Exception <a 'java/lang/StackOverflowError'> (0x0f466168) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u91\6644\hotspot\src\share\vm\runtime\javaCalls.cpp, line 386]
+
+Events (10 events):
+Event: 1.863 loading class com/googlecode/javacv/cpp/opencv_imgproc$CvDistanceFunction
+Event: 1.863 loading class com/googlecode/javacv/cpp/opencv_imgproc$CvDistanceFunction done
+Event: 2.478 loading class java/awt/image/ComponentColorModel
+Event: 2.479 loading class java/awt/image/ComponentColorModel done
+Event: 2.481 loading class com/googlecode/javacv/cpp/opencv_core$IplTileInfo
+Event: 2.481 loading class com/googlecode/javacv/cpp/opencv_core$IplTileInfo done
+Event: 2.487 loading class java/nio/FloatBuffer
+Event: 2.487 loading class java/nio/FloatBuffer done
+Event: 4.237 Executing VM operation: EnableBiasedLocking
+Event: 4.237 Executing VM operation: EnableBiasedLocking done
+
+
+Dynamic libraries:
+0x010e0000 - 0x01113000 	C:\Program Files (x86)\Java\jre1.8.0_91\bin\javaw.exe
+0x77a10000 - 0x77b90000 	C:\Windows\SysWOW64\ntdll.dll
+0x75760000 - 0x75870000 	C:\Windows\syswow64\kernel32.dll
+0x75710000 - 0x75757000 	C:\Windows\syswow64\KERNELBASE.dll
+0x77210000 - 0x772b0000 	C:\Windows\syswow64\ADVAPI32.dll
+0x75cd0000 - 0x75d7c000 	C:\Windows\syswow64\msvcrt.dll
+0x756f0000 - 0x75709000 	C:\Windows\SysWOW64\sechost.dll
+0x75600000 - 0x756f0000 	C:\Windows\syswow64\RPCRT4.dll
+0x753a0000 - 0x75400000 	C:\Windows\syswow64\SspiCli.dll
+0x75390000 - 0x7539c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x76010000 - 0x76110000 	C:\Windows\syswow64\USER32.dll
+0x75490000 - 0x75520000 	C:\Windows\syswow64\GDI32.dll
+0x75400000 - 0x7540a000 	C:\Windows\syswow64\LPK.dll
+0x75e80000 - 0x75f1d000 	C:\Windows\syswow64\USP10.dll
+0x74360000 - 0x744fe000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x75410000 - 0x75467000 	C:\Windows\syswow64\SHLWAPI.dll
+0x75b30000 - 0x75b90000 	C:\Windows\system32\IMM32.DLL
+0x77120000 - 0x771ec000 	C:\Windows\syswow64\MSCTF.dll
+0x751f0000 - 0x7521e000 	C:\Windows\SysWOW64\nvinit.dll
+0x751e0000 - 0x751e9000 	C:\Windows\system32\VERSION.dll
+0x0f000000 - 0x0f006000 	C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\detoured.dll
+0x712a0000 - 0x712cb000 	C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\nvd3d9wrap.dll
+0x76f40000 - 0x770dd000 	C:\Windows\syswow64\SETUPAPI.dll
+0x75b00000 - 0x75b27000 	C:\Windows\syswow64\CFGMGR32.dll
+0x76110000 - 0x7619f000 	C:\Windows\syswow64\OLEAUT32.dll
+0x772b0000 - 0x7740c000 	C:\Windows\syswow64\ole32.dll
+0x755b0000 - 0x755c2000 	C:\Windows\syswow64\DEVOBJ.dll
+0x71280000 - 0x7129f000 	C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\nvdxgiwrap.dll
+0x5ff70000 - 0x6002f000 	C:\Program Files (x86)\Java\jre1.8.0_91\bin\msvcr100.dll
+0x604a0000 - 0x6086a000 	C:\Program Files (x86)\Java\jre1.8.0_91\bin\client\jvm.dll
+0x707e0000 - 0x707e7000 	C:\Windows\system32\WSOCK32.dll
+0x75870000 - 0x758a5000 	C:\Windows\syswow64\WS2_32.dll
+0x75b90000 - 0x75b96000 	C:\Windows\syswow64\NSI.dll
+0x74150000 - 0x74182000 	C:\Windows\system32\WINMM.dll
+0x758b0000 - 0x758b5000 	C:\Windows\syswow64\PSAPI.DLL
+0x73820000 - 0x7382c000 	C:\Program Files (x86)\Java\jre1.8.0_91\bin\verify.dll
+0x71d20000 - 0x71d41000 	C:\Program Files (x86)\Java\jre1.8.0_91\bin\java.dll
+0x71860000 - 0x71873000 	C:\Program Files (x86)\Java\jre1.8.0_91\bin\zip.dll
+0x761a0000 - 0x76dea000 	C:\Windows\syswow64\SHELL32.dll
+0x77600000 - 0x7760b000 	C:\Windows\syswow64\profapi.dll
+0x5eec0000 - 0x5ef7e000 	C:\Users\Administrator\AppData\Local\Temp\javacpp173448894958726\msvcr100.dll
+0x6d420000 - 0x6d489000 	C:\Users\Administrator\AppData\Local\Temp\javacpp173448894958726\msvcp100.dll
+0x5da50000 - 0x5dc4f000 	C:\Users\Administrator\AppData\Local\Temp\javacpp173448894958726\opencv_core244.dll
+0x68c10000 - 0x68c83000 	C:\Users\Administrator\AppData\Local\Temp\javacpp173448894958726\jniopencv_core.dll
+0x5d490000 - 0x5d6ed000 	C:\Users\Administrator\AppData\Local\Temp\javacpp173448894958726\opencv_imgproc244.dll
+0x5eca0000 - 0x5ecd7000 	C:\Users\Administrator\AppData\Local\Temp\javacpp173448894958726\jniopencv_imgproc.dll
+0x062b0000 - 0x07049000 	C:\Users\Administrator\AppData\Local\Temp\javacpp173448894958726\opencv_ffmpeg244.dll
+0x5d280000 - 0x5d48a000 	C:\Users\Administrator\AppData\Local\Temp\javacpp173448894958726\opencv_highgui244.dll
+0x70760000 - 0x70779000 	C:\Windows\system32\AVIFIL32.dll
+0x5ce00000 - 0x5ce14000 	C:\Windows\system32\MSACM32.dll
+0x72180000 - 0x721a1000 	C:\Windows\system32\MSVFW32.dll
+0x721b0000 - 0x721c3000 	C:\Windows\system32\AVICAP32.dll
+0x714c0000 - 0x714cf000 	C:\Users\Administrator\AppData\Local\Temp\javacpp173448894958726\jniopencv_highgui.dll
+0x72d10000 - 0x72d90000 	C:\Windows\system32\uxtheme.dll
+0x75f80000 - 0x76003000 	C:\Windows\syswow64\CLBCatQ.DLL
+0x5d1e0000 - 0x5d1f4000 	C:\Windows\SysWOW64\devenum.dll
+0x72c70000 - 0x72c91000 	C:\Windows\system32\ntmarta.dll
+0x75e30000 - 0x75e75000 	C:\Windows\syswow64\WLDAP32.dll
+0x770e0000 - 0x7710e000 	C:\Windows\syswow64\WINTRUST.dll
+0x75bb0000 - 0x75cd0000 	C:\Windows\syswow64\CRYPT32.dll
+0x75d80000 - 0x75d8c000 	C:\Windows\syswow64\MSASN1.dll
+0x5d1d0000 - 0x5d1db000 	C:\Windows\system32\msdmo.dll
+0x5ec20000 - 0x5ec52000 	C:\Windows\SysWOW64\qcap.dll
+0x5e5c0000 - 0x5e737000 	C:\Windows\SysWOW64\quartz.dll
+0x70c00000 - 0x70c93000 	C:\Users\Administrator\AppData\Roaming\TaobaoProtect\TaobaoProtectSE.dll
+0x70bf0000 - 0x70bf3000 	C:\Windows\system32\sfc.dll
+0x70be0000 - 0x70bed000 	C:\Windows\system32\sfc_os.DLL
+0x72cf0000 - 0x72d03000 	C:\Windows\system32\dwmapi.dll
+0x5baa0000 - 0x5bad3000 	C:\Windows\SysWOW64\ksproxy.ax
+0x73860000 - 0x73864000 	C:\Windows\SysWOW64\ksuser.dll
+0x5a0f0000 - 0x5a2b3000 	C:\Windows\SysWOW64\d3d9.dll
+0x73850000 - 0x73856000 	C:\Windows\SysWOW64\d3d8thk.dll
+0x73880000 - 0x73889000 	C:\Windows\SysWOW64\vidcap.ax
+0x5ba80000 - 0x5ba9d000 	C:\Windows\SysWOW64\kswdmcap.ax
+0x5a300000 - 0x5a41c000 	C:\Windows\SysWOW64\MFC42.dll
+0x5acb0000 - 0x5ad3c000 	C:\Windows\SysWOW64\ODBC32.dll
+0x5ba40000 - 0x5ba78000 	C:\Windows\SysWOW64\odbcint.dll
+0x5eba0000 - 0x5ec20000 	C:\Windows\SysWOW64\qedit.dll
+0x75da0000 - 0x75e1b000 	C:\Windows\syswow64\COMDLG32.dll
+0x74190000 - 0x74320000 	C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.18120_none_72d2e82386681b36\gdiplus.dll
+0x70160000 - 0x70247000 	C:\Windows\system32\DDRAW.dll
+0x68d30000 - 0x68d36000 	C:\Windows\system32\DCIMAN32.dll
+0x72df0000 - 0x72ece000 	C:\Windows\system32\nvumdshim.dll
+0x52420000 - 0x53af8000 	C:\Windows\system32\igdumdim32.dll
+0x5d100000 - 0x5d1cc000 	C:\Windows\system32\D3DIM700.DLL
+0x70750000 - 0x70759000 	C:\Windows\system32\msyuv.dll
+0x727d0000 - 0x728bb000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK 
+java_command: com.kdk.trace.JavaCVCamShift
+java_class_path (initial): D:\opencv\JavaCV\bin;D:\opencv\JavaCV\lib;D:\opencv\JavaCV\lib\javacpp.jar;D:\opencv\JavaCV\lib\javacv-windows-x86.jar;D:\opencv\JavaCV\lib\javacv.jar;D:\opencv\JavaCV\lib\opencv-2.4.4-windows-x86.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.8.0_60
+CLASSPATH=¡°.;C:\Program Files (x86)\Java\jdk1.8.0_60\lib\dt.jar;C:\Program Files (x86)\Java\jdk1.8.0_60\lib\tools.jar;D:\Eclipse\adt-bundle-windows-x86-20140321\sdk\platforms\android-19;¡±
+PATH=C:/Program Files (x86)/Java/jre1.8.0_91/bin/client;C:/Program Files (x86)/Java/jre1.8.0_91/bin;C:/Program Files (x86)/Java/jre1.8.0_91/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Java\jdk1.8.0_60\bin;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\git\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Eclipse\adt-bundle-windows-x86-20140321\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.18229)
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+Memory: 4k page, physical 8307624k(2977784k free), swap 16613384k(10976160k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.91-b14) for windows-x86 JRE (1.8.0_91-b14), built on Apr  1 2016 01:01:28 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Jun 15 18:38:34 2016
+elapsed time: 5 seconds (0d 0h 0m 5s)
+
